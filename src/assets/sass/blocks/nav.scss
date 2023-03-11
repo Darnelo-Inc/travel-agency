@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+}
+
+.nav__link {
+  display: inline-block;
+  margin-right: 3.7rem;
+  padding: 0.9rem 2.1rem;
+
+  font-size: 1.7rem;
+  color: $clr--title;
+  text-decoration: none;
+
+  &.active {
+    border: 0.1rem solid $clr--title;
+    border-radius: 0.5rem;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 0;
+
+    position: relative;
+    bottom: 0.1rem;
+
+    background-color: $black;
+
+    transition: width 0.2s ease-in-out;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.nav__select {
+  border: none;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,54 @@
+.trips {
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 0;
+}
+
+.trips__item {
+    position: relative;
+
+    font-weight: 500;
+    color: $clr--text;
+
+    border-radius: 2.4rem;
+    box-shadow: 0 3.852rem 2.546rem rgba(#000, .1);
+    overflow: hidden;
+}
+
+.trips__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+    width: 100%;
+    padding: 2.5rem 2.5rem 4.2rem;
+
+    background: $white;
+}
+
+.trips__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    font-size: 1.8rem;
+}
+
+.trips__name,
+.trips__cost {
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.trips__term {
+    font-size: 1.6rem;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,40 @@
+.section {
+  position: relative;
+
+  margin-bottom: 21rem;
+
+  &--services {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 4%;
+      z-index: 10;
+
+      display: block;
+      width: 15rem;
+      height: 16rem;
+
+      background: url("../img/services/bg.png");
+      background-size: cover;
+    }
+  }
+}
+
+.section__header {
+  margin-bottom: 6.6rem;
+}
+
+.section__suptitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: $clr--text;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-family: "Volkhov", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: $clr--title;
+}

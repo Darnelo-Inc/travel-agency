@@ -1,0 +1,39 @@
+@import "vars";
+@import "helpers";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: $black;
+
+  background-color: $white;
+}
+
+
+// Bootstrap //
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+// Blocks //
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/section";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/services";
+@import "blocks/trips";

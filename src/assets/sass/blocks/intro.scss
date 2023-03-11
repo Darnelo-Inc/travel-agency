@@ -1,0 +1,130 @@
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: -20%;
+        right: 0;
+        z-index: -100;
+
+        background: url("../img/intro/bg.png") no-repeat;
+        background-position: top right;
+        background-size: cover;
+    }
+}
+
+.intro__content {
+    width: 100%;
+    max-width: 54.5rem;
+    margin-top: 10rem;
+}
+
+.intro__suptitle {
+    margin-bottom: 3rem;
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: $orange;
+    text-transform: uppercase;
+}
+
+.intro__title {
+    position: relative;
+
+    margin-bottom: 4rem;
+
+    font-family: 'Volkhov', serif;
+    font-size: 8.4rem;
+    font-weight: 700;
+    line-height: 1.06;
+    color: $clr--title;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 18.5%;
+        right: -21%;
+        z-index: -10;
+
+        display: block;
+        width: 38.5rem;
+        height: 1.2rem;
+
+        background: url("../img/intro/decore.png") center no-repeat;
+        background-size: cover;
+    }
+}
+
+.intro__text {
+    width: 100%;
+    max-width: 47.5rem;
+    margin-bottom: 4rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $clr--text;
+    line-height: 1.875;
+}
+
+.intro__img {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: -10;
+
+        transform: translateY(-40%);
+    }
+}
+
+.intro__footer {
+    display: flex;
+    align-items: center;
+}
+
+.play__text {
+    position: relative;
+
+    margin-left: 12rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -61%;
+        left: -100%;
+        z-index: 10;
+
+        display: block;
+        width: 5.2rem;
+        height: 5.2rem;
+
+        background-color: $orange;
+        border-radius: 50%;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -73%;
+        z-index: 10;
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        border-style: solid;
+        border-width: 7.5px 0 7.5px 13.0px;
+        border-color: transparent transparent transparent $white;
+
+        transform: translateY(-43%);
+    }
+}
