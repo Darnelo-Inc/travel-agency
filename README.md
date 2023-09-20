@@ -3,7 +3,7 @@
 [Bootstrap training project](https://darnelo-inc.github.io/travel-agency/)
 
 HTML /
-Less /
+SCSS /
 Bootstrap /
 Gulp
 
