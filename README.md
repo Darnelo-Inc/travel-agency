@@ -1,19 +1,9 @@
-# Travel agency
-Adaptive landing website
+# travel-agency
 
-HTML 5 /
-CSS 3 /
+[Bootstrap training project](https://darnelo-inc.github.io/travel-agency/)
+
+HTML /
 Less /
-JS /
-Gulp /
-Bootstrap
-
-For review without Gulp: 
-    1. Download zip ->
-    2. open file dist/index.html
-    
-For review with Gulp:    
-    1. Download zip ->
-    2. In the project directory use ``npm i`` to install dependencies ->
-    3. Then use ``gulp`` to start the project
+Bootstrap /
+Gulp
 
