@@ -1,0 +1,47 @@
+.guide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.guide__main {
+    width: 48%;
+}
+
+.guide__steps {
+    width: 100%;
+    max-width: 350px;
+    padding-left: 6.5rem;
+
+    list-style: none;
+}
+
+.guide__step {
+    position: relative;
+
+    margin-bottom: 4.8rem;
+
+}
+
+.guide__icon {
+    position: absolute;
+    left: -65px;
+    top: 50%;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.guide__name,
+.guide__text {
+    font-size: 1.6rem;
+    line-height: 1.245;
+    color: $clr--text;
+}
+
+.guide__text {
+    font-weight: 400;
+}
+
+.guide__info {
+    width: 48%;
+}

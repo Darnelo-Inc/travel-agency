@@ -13,7 +13,15 @@
     border-radius: 2.4rem;
     box-shadow: 0 3.852rem 2.546rem rgba(#000, .1);
     overflow: hidden;
+
+    transition: transform .25s ease-in-out;
+
+    &:hover {
+        transform: translate3d(-10px, -10px, 0);
+    }
 }
+
+.trips__link {}
 
 .trips__content {
     position: absolute;
@@ -45,10 +53,28 @@
 }
 
 .trips__term {
+    padding-left: 3rem;
+
     font-size: 1.6rem;
 
     &:hover {
         text-decoration: underline;
         cursor: pointer;
     }
+}
+
+.trips__footer {
+    position: relative;
+}
+
+.trips__nav {
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    z-index: 1;
+
+    width: 1.625rem;
+    height: 1.625rem;
+
+    fill: $black;
 }
